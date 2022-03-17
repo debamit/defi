@@ -1,2 +1,2 @@
 # defi
-Scripts to interact with EVM chain for automated borrowing, swapping and leverage
+Scripts to interact with mainnet Ethereum to deposit and borrow using aave v2 
