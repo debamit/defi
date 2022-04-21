@@ -13,7 +13,7 @@ def get_lending_pool():
     lending_pool = lending_pool_address_provider.getLendingPool()
     return Contract.from_explorer(lending_pool)
 
-
+# Get ETH/DAI price from chainlink contract 
 def get_asset_price():
     price_feed = Contract.from_explorer(get_address("dai_eth_price"))
     return float(Wei(price_feed.latestRoundData()[1]).to("ether"))
