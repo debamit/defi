@@ -28,6 +28,7 @@ def get_dai_to_borrow(eth_available_to_borrow, borrow_limit=0.8):
     return float((1 / dai_eth_price) * (eth_available_to_borrow * borrow_limit))
 
 
+# Function to call to get WETH and then borrow some DIA against it using AAVE v2 
 def borrow_dai_for_weth(_weth_amount, _dai_amount, owner):
     _weth_token = interface.IWeth(get_address("weth"))
     _dai_token = Contract.from_explorer(get_address("dai"))
